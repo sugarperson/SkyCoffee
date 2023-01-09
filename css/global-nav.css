@@ -1,0 +1,22 @@
+.global-nav ul{
+   display: flex;
+   justify-content: center;
+   column-gap: 80px;
+}
+
+.global-nav li{
+   list-style: none;
+}
+
+.global-nav li a{
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 18px;
+   color: #333333;
+}
+
+.global-nav li a:visited,.global-nav li a:link{
+   color: black;
+}

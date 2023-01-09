@@ -1,0 +1,145 @@
+/* メインコンテナのスタイル */
+.concept{
+   padding: 50px 30px;
+}
+
+/* コンセプト部分のスタイル */
+.concept > .container{
+   width: 90%;
+   margin: 0 auto;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container .img{
+   flex: 1;
+}
+
+.container .img img{
+   width: fit-content;
+   max-width: 550px;
+   height: fit-content;
+   max-height: 550px;
+   display: block;
+}
+
+.container .desk{
+   flex: 1;
+   margin-left: 80px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.desk .subtitle, .title, .text{
+   color: var(--default-black);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.desk .subtitle{
+   font-weight: 400;
+   line-height: 18px;
+}
+
+.desk .title{
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 48px;
+   color: #24a8bf;
+}
+
+.desk .text p{
+   font-weight: 400;
+   line-height: 29px;
+}
+
+/* ブログ部分のスタイル */
+.heading{
+   text-align: center;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 32px;
+   color: var(--theme-color);
+}
+
+.heading .subtitle{
+   display: block;
+   margin-top: 8px;
+   font-size: 13px;
+   line-height: 13px;
+   color: var(--default-black);
+}
+
+.list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 40px;
+}
+
+.item{
+   width: 100%;
+}
+
+.item .img{
+   width: fit-content;
+   display: block;
+   position: relative;
+}
+
+.item .img img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+.blog .container{
+   width: 90%;
+   margin: 0 auto;
+   padding: 50px 30px;
+}
+
+
+/* ブログ一覧ボタン */
+.btn-container{
+   margin-top: 30px;
+   width: 100%;
+}
+
+.btn-container a{
+   text-decoration: none;
+}
+
+.btn{
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+   width: 210px;
+   height: 50px;
+   margin: 0 auto;
+   color: var(--theme-color);
+   border: 1px var(--theme-color) solid;
+   border-radius: 3px;
+}
+
+.btn-string{
+   display: block;
+   width: fit-content;
+   height: fit-content;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 15px;
+}
+
+.btn-arrow{
+   display: block;
+   position: absolute;
+   top: calc(50% - 5px);
+   right: 20px;
+   content: " ";
+   /* background-image: url(../images/icon_arrow-right.png);
+   background-repeat: none;
+   background-size: 6px 10px; */
+}
